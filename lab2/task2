@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int m, n;
+    
+    cout << "Vvedit m: ";
+    cin >> m;
+    cout << "Vvedit n: ";
+    cin >> n;
+
+    cout << "\nZnachennya do obchyslennya: m = " << m << ", n = " << n << endl;
+
+    // Виконання операції ++m + --n
+    int result = ++m + --n;
+
+    cout << "Rezultat vyrazu (++m + --n): " << result << endl;
+    cout << "Znachennya pislya obchyslennya: m = " << m << ", n = " << n << endl;
+
+    return 0;
+}
