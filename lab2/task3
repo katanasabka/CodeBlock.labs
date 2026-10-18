@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double radius;
+    const double PI = 3.14159;
+
+    cout << "Vvedit radius kola (R): ";
+    cin >> radius;
+
+    if (radius < 0) {
+        cout << "Pomyłka: Radius ne mozhe buty vid'yemnym!" << endl;
+    } else {
+        double length = 2 * PI * radius;       // Довжина кола
+        double area = PI * pow(radius, 2);     // Площа круга
+
+        cout << "\n--- Rezultaty obchyslen' ---" << endl;
+        cout << "Dovzhyna kola (L): " << length << endl;
+        cout << "Ploshcha kruga (S): " << area << endl;
+    }
+
+    return 0;
+}
