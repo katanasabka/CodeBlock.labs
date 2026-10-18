@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    // Використовуємо тип double для точності
+    double a, b;
+    
+    cout << "Vvedit znacennya a: ";
+    cin >> a;
+    cout << "Vvedit znacennya b: ";
+    cin >> b;
+
+    // Проміжні змінні для чисельника та знаменника
+    double part1 = pow(a + b, 3);
+    double part2 = pow(a, 3) + 3 * pow(a, 2) * b;
+    double numerator = part1 - part2; // Чисельник
+    
+    double denominator = 3 * a * pow(b, 2) + pow(b, 3); // Знаменник
+
+    if (denominator == 0) {
+        cout << "Pomyłka: Dilennya na nul!" << endl;
+    } else {
+        double result = numerator / denominator;
+        cout << "Rezultat obchyslennya vyrazu: " << result << endl;
+    }
+
+    return 0;
+}
